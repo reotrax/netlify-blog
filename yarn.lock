@@ -5084,6 +5084,11 @@ gray-matter@^4.0.2:
     section-matter "^1.0.0"
     strip-bom-string "^1.0.0"
 
+gridsome-helper-json@^1.0.3:
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/gridsome-helper-json/-/gridsome-helper-json-1.0.3.tgz#ad18ca2e15e1d9f1a6524507fc3b87b99bcee9d2"
+  integrity sha512-CgXlq3PGpBRj8RMnLSYs46Hvl5q9Up9kwuMAcYlvS4sNgH5j4Ao7hbY+HI62PaYTeIdffiJidLEIeZVCmZCrFA==
+
 gridsome-plugin-netlify-cms@^1.0.9:
   version "1.0.9"
   resolved "https://registry.yarnpkg.com/gridsome-plugin-netlify-cms/-/gridsome-plugin-netlify-cms-1.0.9.tgz#10c2e594225ca7fd6cfe876a2c4b583a4dec0d4c"
