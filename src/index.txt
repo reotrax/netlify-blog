@@ -1,3 +1,5 @@
+<!-- Gridsomeのデフォのindex.htmlをOverrideしたければindex.htmlにリネーム -->
+<!-- https://gridsome.org/docs/overriding-index/ -->
 <!-- https://pensuke.work/posts/gridsome-netlify-cms -->
 <!doctype html>
 <html>
@@ -7,6 +9,7 @@
   <title>Netlify CMS</title>
 </head>
 <body>
+  <h1>Vue</h1>
   <script src="index.js" type="module"></script>
 </body>
 </html>
