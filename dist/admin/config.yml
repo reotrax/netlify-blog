@@ -1,0 +1,22 @@
+# https://pensuke.work/posts/gridsome-netlify-cms
+backend:
+  name: github
+  repo: reotrax/netlify-blog
+  branch: main
+
+media_folder: "static/uploads"
+public_folder: "/uploads"
+
+collections:
+  - name: "posts"
+    label: "Posts"
+    folder: "content/posts/"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      # https://www.netlifycms.org/docs/widgets/
+      - {label: "タイトル", name: "title", widget: "string"}
+      - {label: "概要", name: "description", widget: "string"}
+      - {label: "公開日", name: "date", widget: "date"}
+      - {label: "内容", name: "body", widget: "markdown"}
+      - {label: "タグ", name: "tags", widget: "string"}
