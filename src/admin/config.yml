@@ -14,6 +14,7 @@ collections:
     create: true
     slug: "{{slug}}"
     fields:
+      # https://www.netlifycms.org/docs/widgets/
       - {label: "タイトル", name: "title", widget: "string"}
       - {label: "概要", name: "description", widget: "string"}
       - {label: "公開日", name: "date", widget: "date"}

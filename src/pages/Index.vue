@@ -27,16 +27,15 @@
       p.gaiyo
         | 概要: {{ post.node.description }}
 
-      p.tag
+      p.tags
         | タグ: {{ post.node.tags }}
-      ul(
-        v-if="post.node.tags"
+
+      p.date
+        | {{ post.node.date }}
+
+      .post-content(
+        v-html="post.node.content"
       )
-        li(
-          v-for="tag in post.node.tags"
-          :key="tag.id"
-        )
-          | {{ tag }}
 
   </Layout>
 </template>
@@ -55,6 +54,7 @@
         }
         description
         content
+        date
       }
     }
   }
@@ -89,6 +89,16 @@ p {
   }
   &:nth-of-type(1) {
     margin: 0;
+  }
+}
+
+// widget
+.post-content {
+  background: rgb(39, 39, 39);
+  color: rgb(231, 231, 231);
+  .language-javascript {
+    // background: black;
+    // color: white;
   }
 }
 </style>
