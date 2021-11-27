@@ -62,7 +62,7 @@ module.exports = {
         //   }
         // }
       }
-    }
+    },
     // https://pensuke.work/posts/gridsome-netlify-cms
     {
       use: `gridsome-plugin-netlify-cms`,
