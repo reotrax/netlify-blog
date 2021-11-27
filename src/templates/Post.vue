@@ -7,6 +7,9 @@
         :key="tag.id"
       )
         | {{ tag }}
+      div(
+        v-html="$page.post.content"
+      )
 </template>
 
 <page-query>
