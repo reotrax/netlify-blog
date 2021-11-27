@@ -5,7 +5,7 @@
 // To restart press CTRL + C in terminal and run `gridsome develop`
 
 module.exports = {
-  siteName: 'Gridsome',
+  siteName: 'Gridsome - Netlify',
   // siteUrl: 'https://www.gridsome.org',
 
   // https://pensuke.work/posts/create-a-blog-with-grdisome-default-starter
@@ -33,24 +33,42 @@ module.exports = {
     {
       use: '@gridsome/source-filesystem',
       options: {
-        typeName: 'Post',
-        path: 'content/posts/*.md',
-        route: ':slug',
-        refs: {
-          tags: {
-            typeName: 'Tag',
-            route: '/tag/:id',
-            create: true
-          }
-        }
+        // typeName: 'Post', // GraphQLスキーマのタイプ名
+        // path: 'content/posts/*.md', // Markdownファイル配置場所
+        // // pathPrefix: '/', // URLPathのプレフィックス
+        // template: './src/templates/Post.vue', // テンプレートファイル名
+        // route: '/blog/:id',
+        // route: '/blog/:id/:slug',
+        // refs: {
+        //   tags: {
+        //     typeName: 'Blog',
+        //     route: '/blog/:id',
+        //     create: true
+        //   }
+        // }
       },
     },
+    {
+      use: '@gridsome/vue-remark',
+      options: {
+        // typeName: 'Post', // GraphQLスキーマのタイプ名
+        // baseDir: 'content/posts/*.md', // Markdownファイル配置場所
+        // // pathPrefix: '/', // URLPathのプレフィックス
+        // template: './src/templates/Post.vue', // テンプレートファイル名
+        // refs: {
+        //   tags: { // タグを使用する
+        //     typeName: 'Tag',
+        //     create: true // tagsからタグのコレクションを生成
+        //   }
+        // }
+      }
+    }
     // https://pensuke.work/posts/gridsome-netlify-cms
     {
       use: `gridsome-plugin-netlify-cms`,
       options: {
-        publicPath: `/admin`,
-        modulePath: `src/admin/index.js`
+        publicPath: `/`,
+        modulePath: `src/index.js`
       }
     },
   ]
