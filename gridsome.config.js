@@ -33,19 +33,19 @@ module.exports = {
     {
       use: '@gridsome/source-filesystem',
       options: {
-        // typeName: 'Post', // GraphQLスキーマのタイプ名
-        // path: 'content/posts/*.md', // Markdownファイル配置場所
-        // // pathPrefix: '/', // URLPathのプレフィックス
-        // template: './src/templates/Post.vue', // テンプレートファイル名
-        // route: '/blog/:id',
-        // route: '/blog/:id/:slug',
-        // refs: {
-        //   tags: {
-        //     typeName: 'Blog',
-        //     route: '/blog/:id',
-        //     create: true
-        //   }
-        // }
+        typeName: 'Post', // GraphQLスキーマのタイプ名
+        path: 'content/posts/*.md', // Markdownファイル配置場所
+        // pathPrefix: '/', // URLPathのプレフィックス
+        template: './src/templates/Post.vue', // テンプレートファイル名
+        route: '/blog/:id',
+        route: '/blog/:id/:slug',
+        refs: {
+          tags: {
+            typeName: 'Blog',
+            route: '/blog/:id',
+            create: true
+          }
+        }
       },
     },
     // {
