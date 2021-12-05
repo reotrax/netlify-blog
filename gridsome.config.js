@@ -37,8 +37,14 @@ module.exports = {
         path: 'content/posts/*.md', // Markdownファイル配置場所
         // pathPrefix: '/', // URLPathのプレフィックス
         template: './src/templates/Post.vue', // テンプレートファイル名
-        route: '/blog/:id',
-        route: '/blog/:id/:slug',
+        // route: '/blog/:id',
+        // route: '/blog/:id/:slug',
+        route: '/blog/:year/:month/:day/:slug',
+        remark: {
+          plugins: [
+            '@gridsome/remark-prismjs'
+          ]
+        },
         refs: {
           tags: {
             typeName: 'Blog',
@@ -48,21 +54,21 @@ module.exports = {
         }
       },
     },
-    // {
-    //   use: '@gridsome/vue-remark',
-    //   options: {
-    //     // typeName: 'Post', // GraphQLスキーマのタイプ名
-    //     // baseDir: 'content/posts/*.md', // Markdownファイル配置場所
-    //     // // pathPrefix: '/', // URLPathのプレフィックス
-    //     // template: './src/templates/Post.vue', // テンプレートファイル名
-    //     // refs: {
-    //     //   tags: { // タグを使用する
-    //     //     typeName: 'Tag',
-    //     //     create: true // tagsからタグのコレクションを生成
-    //     //   }
-    //     // }
-    //   }
-    // },
+    {
+      use: '@gridsome/vue-remark',
+      options: {
+        typeName: 'Documentation', // GraphQLスキーマのタイプ名
+        baseDir: 'content/posts/*.md', // Markdownファイル配置場所
+        pathPrefix: '/', // URLPathのプレフィックス
+        template: './src/templates/Post.vue', // テンプレートファイル名
+        // refs: {
+        //   tags: { // タグを使用する
+        //     typeName: 'Tag',
+        //     create: true // tagsからタグのコレクションを生成
+        //   }
+        // }
+      }
+    },
     // https://pensuke.work/posts/gridsome-netlify-cms
     {
       use: `gridsome-plugin-netlify-cms`,
