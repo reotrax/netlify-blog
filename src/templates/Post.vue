@@ -1,6 +1,5 @@
 <template lang="pug">
   .layout
-    VueRemarkContent/
     aside
       span(
         v-for="tag in $page.post.tags"
@@ -10,6 +9,7 @@
       div(
         v-html="$page.post.content"
       )
+      VueRemarkContent(:source="$page.post.content")
 </template>
 
 <page-query>

@@ -57,8 +57,8 @@ module.exports = {
     // {
     //   use: '@gridsome/vue-remark',
     //   options: {
-    //     typeName: 'Post', // GraphQLスキーマのタイプ名
-    //     baseDir: 'content/posts/*.md', // Markdownファイル配置場所
+    //     typeName: 'MarkdownPage', // GraphQLスキーマのタイプ名
+    //     baseDir: 'content/posts/', // Markdownファイル配置場所
     //     pathPrefix: '/', // URLPathのプレフィックス
     //     template: './src/templates/Post.vue', // テンプレートファイル名
     //     // refs: {
