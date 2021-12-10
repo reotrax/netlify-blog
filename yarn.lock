@@ -1083,7 +1083,7 @@
 
 "@gridsome/remark-prismjs@^0.5.0":
   version "0.5.0"
-  resolved "https://registry.yarnpkg.com/@gridsome/remark-prismjs/-/remark-prismjs-0.5.0.tgz#50a92fb29933c354ac8704c77d2b55a6e1f8d8d9"
+  resolved "https://registry.npmjs.org/@gridsome/remark-prismjs/-/remark-prismjs-0.5.0.tgz"
   integrity sha512-aEQg/MTNOtsWC11yozSGJI51Qk+vG7pPAipULBryjmmmLq81IGFREkEXYXPLLVCib0D652a3/CrUBnTYQBuoWA==
   dependencies:
     escape-html "^1.0.3"
@@ -1525,13 +1525,6 @@
     vue-template-es2015-compiler "^1.9.0"
   optionalDependencies:
     prettier "^1.18.2 || ^2.0.0"
-
-"@vue/composition-api@^1.4.0":
-  version "1.4.0"
-  resolved "https://registry.npmjs.org/@vue/composition-api/-/composition-api-1.4.0.tgz"
-  integrity sha512-fanqJw1cqhkfS1dcpFY52CeR0aWDBr7ub/0ObPWqMnNPdRsMi1gX04Q3aLeRtJEuVeCFewNbqvkPskkSPTVaXQ==
-  dependencies:
-    tslib "^2.3.1"
 
 "@webassemblyjs/ast@1.9.0":
   version "1.9.0"
@@ -3194,9 +3187,9 @@ core-js@^3.6.4:
   integrity sha512-Tnc7E9iKd/b/ff7GFbhwPVzJzPztGrChB8X8GLqoYGdEOG8IpLnK1xPyo3ZoO3HsK6TodJS58VGPOxA+hLHQMg==
 
 core-js@^3.6.5:
-  version "3.19.2"
-  resolved "https://registry.yarnpkg.com/core-js/-/core-js-3.19.2.tgz#ae216d7f4f7e924d9a2e3ff1e4b1940220f9157b"
-  integrity sha512-ciYCResnLIATSsXuXnIOH4CbdfgV+H1Ltg16hJFN7/v6OxqnFr/IFGeLacaZ+fHLAm0TBbXwNK9/DNBzBUrO/g==
+  version "3.19.3"
+  resolved "https://registry.yarnpkg.com/core-js/-/core-js-3.19.3.tgz#6df8142a996337503019ff3235a7022d7cdf4559"
+  integrity sha512-LeLBMgEGSsG7giquSzvgBrTS7V5UL6ks3eQlUSbN8dJStlLFiRzUm5iqsRyzUB8carhfKjkJ2vzKqE6z1Vga9g==
 
 core-util-is@1.0.2:
   version "1.0.2"
@@ -5379,7 +5372,7 @@ hast-util-to-html@^4.0.0:
 
 hast-util-to-html@^6.0.2:
   version "6.1.0"
-  resolved "https://registry.yarnpkg.com/hast-util-to-html/-/hast-util-to-html-6.1.0.tgz#86bcd19c3bd46af456984f8f34db16298c2b10b0"
+  resolved "https://registry.npmjs.org/hast-util-to-html/-/hast-util-to-html-6.1.0.tgz"
   integrity sha512-IlC+LG2HGv0Y8js3wqdhg9O2sO4iVpRDbHOPwXd7qgeagpGsnY49i8yyazwqS35RA35WCzrBQE/n0M6GG/ewxA==
   dependencies:
     ccount "^1.0.0"
@@ -9005,7 +8998,7 @@ pretty-error@^2.0.2:
 
 prismjs@^1.15.0:
   version "1.25.0"
-  resolved "https://registry.yarnpkg.com/prismjs/-/prismjs-1.25.0.tgz#6f822df1bdad965734b310b315a23315cf999756"
+  resolved "https://registry.npmjs.org/prismjs/-/prismjs-1.25.0.tgz"
   integrity sha512-WCjJHl1KEWbnkQom1+SzftbtXMKQoezOCYs5rECqMN+jP+apI7ftoflyqigqzopSO3hMhTEb0mFClA8lkolgEg==
 
 probe-image-size@^4.0.0:
@@ -11016,7 +11009,7 @@ stringify-entities@^1.0.1:
 
 stringify-entities@^2.0.0:
   version "2.0.0"
-  resolved "https://registry.yarnpkg.com/stringify-entities/-/stringify-entities-2.0.0.tgz#fa7ca6614b355fb6c28448140a20c4ede7462827"
+  resolved "https://registry.npmjs.org/stringify-entities/-/stringify-entities-2.0.0.tgz"
   integrity sha512-fqqhZzXyAM6pGD9lky/GOPq6V4X0SeTAFBl0iXb/BzOegl40gpf/bV3QQP7zULNYvjr6+Dx8SCaDULjVoOru0A==
   dependencies:
     character-entities-html4 "^1.0.0"
@@ -11468,7 +11461,7 @@ tslib@^1.10.0, tslib@^1.9.3:
   resolved "https://registry.npmjs.org/tslib/-/tslib-1.14.1.tgz"
   integrity sha512-Xni35NKzjgMrwevysHTCArtLDpPvye8zV/0E4EyYn43P7/7qvQwPh9BGkHewbMulVntbigmcT7rdX3BNo9wRJg==
 
-tslib@^2.1.0, tslib@^2.3.1:
+tslib@^2.1.0:
   version "2.3.1"
   resolved "https://registry.npmjs.org/tslib/-/tslib-2.3.1.tgz"
   integrity sha512-77EbyPPpMz+FRFRuAFlWMtmgUWGe9UOG2Z25NqCwiIjRhOf5iKGuzSe5P2w1laq+FkRy4p+PCuVkJSGkzTEKVw==
