@@ -72,9 +72,6 @@ p {
   background-color: lightgray;
   ul {
     margin: 0;
-    li {
-
-    }
   }
   &:nth-of-type(1) {
     margin: 0;

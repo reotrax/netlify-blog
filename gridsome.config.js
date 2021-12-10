@@ -29,6 +29,7 @@ module.exports = {
           pugLoader: { /* Options for `pug-loader` */ }
       }
     },
+    // NOTE: マークダウン用のライブラリ①
     // https://pensuke.work/posts/create-a-blog-with-grdisome-default-starter
     {
       use: '@gridsome/source-filesystem',
@@ -36,9 +37,9 @@ module.exports = {
         typeName: 'Post', // GraphQLスキーマのタイプ名
         path: 'content/posts/*.md', // Markdownファイル配置場所
         // pathPrefix: '/', // URLPathのプレフィックス
-        template: './src/templates/Post.vue', // テンプレートファイル名
-        // route: '/blog/:id',
-        route: '/blog/:id/:slug',
+        template: './src/templates/Post.vue', // src/tempate配下のファイル名
+        route: '/blog/:id',
+        // route: '/blog/:id/:slug',
         // route: '/blog/:year/:month/:day/:slug',
         remark: {
           plugins: [
@@ -54,16 +55,18 @@ module.exports = {
         }
       },
     },
+    // NOTE: マークダウン用のライブラリ② Vue化したい場合はsource-filesystemではなくこちらを使用する
+    // https://webcache.googleusercontent.com/search?q=cache:i7YGykGL7sUJ:https://knote.dev/post/2020-03-20/gridsome-markdown-file/+&cd=4&hl=ja&ct=clnk&gl=jp
     // {
     //   use: '@gridsome/vue-remark',
     //   options: {
-    //     typeName: 'MarkdownPage', // GraphQLスキーマのタイプ名
+    //     typeName: 'Documentation', // GraphQLスキーマのタイプ名
     //     baseDir: 'content/posts/', // Markdownファイル配置場所
     //     pathPrefix: '/', // URLPathのプレフィックス
-    //     template: './src/templates/Post.vue', // テンプレートファイル名
+    //     template: './src/templates/MarkdownPage.vue', // テンプレートファイル名
     //     // refs: {
     //     //   tags: { // タグを使用する
-    //     //     typeName: 'Tag',
+    //     //     typeName: 'Blog',
     //     //     create: true // tagsからタグのコレクションを生成
     //     //   }
     //     // }
