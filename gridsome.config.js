@@ -38,8 +38,9 @@ module.exports = {
         path: 'content/posts/*.md', // Markdownファイル配置場所
         // pathPrefix: '/', // URLPathのプレフィックス
         template: './src/templates/Post.vue', // src/tempate配下のファイル名
-        route: '/blog/:id',
+        // route: '/blog/:id',
         // route: '/blog/:id/:slug',
+        route: '/blog/:slug',
         // route: '/blog/:year/:month/:day/:slug',
         remark: {
           plugins: [
